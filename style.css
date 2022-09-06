@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300;1,600;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 6000px;
+    font-family: 'Rubik', sans-serif;
+ 
+
+}
+:root{
+    --yellow:#ffcc0d;
+    --black:#000;
+    --white:#fff;
+    --light-bg:#eee;
+    --border-solid:0.5rem solid var(var(--black)) 
+    --border-light:0.2rem solid varvar(--white)
+
+
+}
+
+*::selection{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+*::-webkit-scrollbar{
+    height: 0.5rem;
+    width: 1rem;
+}
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+
+
+}
+*::-webkit-scrollbar-thumb{
+    background-color: var(--white);
+}
+html{
+    font-size: 62.55%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+body{
+    overflow: hidden;
+    transition: 0.2s linear !important;
+}
+
+
+/*start Navbar*/
+
+.nav-item{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    
+   
+}
+.nav-item:hover{
+    background-color: var(--yellow);
+    text-decoration: underline solid 2px var(--black);
+    color: red;
+    border-radius: 5px;
+}
+.navbar-brand{
+    font-size: 3rem;
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-bottom: 5px solid var(--black);
+    margin: 0;
+    
+
+}
+.navbar-brand:hover{
+    background-color: var(--yellow);
+    color: #000;
+    border-radius: 2px;
+    
+}
+
+
+/*endNAvbar*/
+/*start home*/
+.navbar{
+    position: sticky;
+}
+.imagse img{
+    height: 50rem;
+    padding: 2rem;
+    border: 0.2rem solid #000;
+    max-width: 100%;
+    display: flex;
+}
+.box-content{
+    margin-top: 15rem;
+}
+.box-content h3{
+    font-size: 3rem;
+}
+.box-content span{
+   margin-top: 1.5rem;
+   margin-left: 2.5rem;
+   background-color: var(--yellow);
+   font-size: 2rem;
+}
+.box-content p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.box-content .btn{
+    width: 100px;
+    height: 30px;
+    border: 2px solid #000;
+    font-size: 1.5rem;
+
+}
+.box-content .btn:hover{
+    background-color: var(--black);
+    color: #fff;
+}
+
+/*end home*
+
+
+
+/*start about
+
+*/
+
+.title_about{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: underline solid #000;
+
+
+}
+ .par p{
+    font-size: 1.2rem;
+ }
+.bio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+}
+.bio h3{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border: 0.2rem solid #000;
+    background-color: #eee;
+    padding:1rem;
+    
+}
+.btn{
+   width: 150px;
+   height: 30px;
+   background-color: #eee;
+   border: 0.2rem solid #000;
+   margin-top: 1.5rem;
+   font-size: 1.5rem;
+   text-transform: capitalize;
+}
+ .btn:hover{
+    background-color: var(--black);
+    color: #fff;
+   
+}
+.progress-bar{
+    background-color: #ffcc0d;
+   
+}
+.progress{
+    height: 40px;
+   padding-top: 0.5rem;
+   padding-bottom:0.5rem ;
+   padding-left: 0.5rem;
+
+    border: 0.2rem solid #000;
+    background: none;
+}
+.pro{
+    font-size: 2rem;
+    color: #000;
+    text-transform: uppercase;
+}
+.parsent{
+    font-size: 2rem;
+    color: #000;
+    text-transform: uppercase;
+}
+
+
+
+/* start service*/
+.fa-solid{
+    display: flex;
+    justify-content: center;
+   font-size: 4rem;
+}
+.box-content-ser{
+
+border: 0.2rem soild #000;
+}
+
+.box-content-ser h3{
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    background-color: #ffcc0d;
+    max-width: 100%;
+}
+.box-content-ser p{
+    font-size: 1.2rem;
+}
+/*end service*/
+/*start proflie*/
+.prof img{
+max-width: 100%;
+}
+.box span{
+    color: #000;
+}
+
+
+
+/*start conatct*/
+
+.title_contact{
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-decoration: underline solid #000;
+
+}
+input{
+    width: 300px;
+    height: 30px;
+    padding: 2rem;
+    border: 0.2rem solid #000;
+    margin: 0.5rem;
+    border-radius: 3px;
+}
+.btn-ser{
+    display: felx;
+    justify-content: center;
+  flex-direction: column;
+
+}
+.box-info{
+    border: 0.2rem solid #000;
+    width: 350px;
+   
+}
+
+
+
+
+@media( max-width: 900px){
+    .bio{
+        flex-direction: column;
+    }
+   
+    .box-content{
+        text-align: center;
+    }
+    .box-info{
+        margin: 2rem;
+       
+    }
+
+}
+
+
+
+
+
+
+
+
